@@ -21,3 +21,6 @@ Route::get('/about', function () {
     $nama = 'Anya Geraldine';
     return view('about', ['nama' => $nama]);
 });
+
+Route::get('/', 'PagesController@home');
+Route::get('/about', 'PagesController@about');
