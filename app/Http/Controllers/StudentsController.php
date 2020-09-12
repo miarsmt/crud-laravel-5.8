@@ -41,16 +41,17 @@ class StudentsController extends Controller
         // $student->nrp = $request->nrp;
         // $student->email = $request->email;
         // $student->jurusan = $request->jurusan;
-
         // $student->save();
 
-        Student::create([
-            'nama' => $request->nama,
-            'nrp' => $request->nrp,
-            'email' => $request->email,
-            'jurusan' => $request->jurusan,
-        ]);
+        // teknik dengan menambahkan fillable
+        // Student::create([
+        //     'nama' => $request->nama,
+        //     'nrp' => $request->nrp,
+        //     'email' => $request->email,
+        //     'jurusan' => $request->jurusan,
+        // ]);
 
+        Student::create($request->all());
         return redirect('/students');
     }
 
