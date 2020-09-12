@@ -37,4 +37,5 @@ Route::get('/mahasiswa', 'MahasiswaController@index');
 // Route::get('/students/{student}/edit', 'StudentsController@edit');
 // Route::patch('/students/{student}', 'StudentsController@update');
 
+// Route untuk mengelola data/CRUD dibuatkan lgsg oleh laravel
 Route::resource('students', 'StudentsController');
