@@ -30,3 +30,4 @@ Route::get('/mahasiswa', 'MahasiswaController@index');
 
 // Student
 Route::get('/students', 'StudentsController@index');
+Route::get('/students/{student}', 'StudentsController@show');
