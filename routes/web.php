@@ -11,6 +11,7 @@
 |
 */
 
+use App\Student;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -26,3 +27,6 @@ Route::get('/', 'PagesController@home');
 Route::get('/about', 'PagesController@about');
 
 Route::get('/mahasiswa', 'MahasiswaController@index');
+
+// Student
+Route::get('/students', 'StundentsController@index');
