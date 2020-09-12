@@ -8,7 +8,7 @@
         <div class="col-8">
             <h1 class="mt-3">Form Edit Mahasiswa</h1>
 
-            <form action="{{ $student->id }}" method="post">
+            <form action="/students/{{ $student->id }}" method="post">
                 @method('patch')
                 @csrf
                 <div class="form-group">
