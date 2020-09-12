@@ -15,7 +15,9 @@ class MahasiswaController extends Controller
      */
     public function index()
     {
+        // teknik query builder
         // $mahasiswa = DB::table('mahasiswa')->get();
+        // teknik eloquent
         $mahasiswa = Student::all();
         return view('mahasiswa.index', ['mahasiswa' => $mahasiswa]);
     }
